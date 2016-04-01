@@ -6,9 +6,29 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Mar 2016 01:22:23 -0400</pubDate>
-    <lastBuildDate>Sat, 26 Mar 2016 01:22:23 -0400</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2016 23:08:25 -0400</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2016 23:08:25 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>My 2016 Challenge (1 Min Read)</title>
+        <description>&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/vodafone_de/17768794394/in/photostream/&quot; title=&quot;Smart Home: Das digitale Wohnzimmer&quot;&gt;&lt;img src=&quot;https://farm1.staticflickr.com/306/17768794394_d4dcb320cc_k.jpg&quot; width=&quot;2048&quot; height=&quot;1365&quot; alt=&quot;Smart Home: Das digitale Wohnzimmer&quot; /&gt;&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;So, Mark Zuckerberg recently shared his &lt;a href=&quot;https://www.facebook.com/zuck/posts/10102577175875681&quot;&gt;2016 challenge&lt;/a&gt;. Apparently, he takes on something new every year and it got me inspired.  Making focus a priority is a goal of mine moving forward in life and it seems well fitting to articulate what had been brooding in my mind to take on in 2016.&lt;/p&gt;
+
+&lt;p&gt;My challenge in 2016 is to make my home sentient. I spend a lot of a quality time in my home and it only makes sense for me to enrich the experience. I’m not sure what this end point really looks like - Jarvis from Iron Man? Maybe not but, I know my interest is to start with capturing key information around my home like power usage and internet bandwidth usage to be more aware of what’s happening in the home. Measure such things as temperature, humidity and presence detection. This is also so my home can intelligently respond to my living experience. Essentially, me learn about my home and my home learn more about me.&lt;/p&gt;
+
+&lt;p&gt;I already started some work around power usage monitoring and will be sharing what I have learned as well as my journey to make a smart home. Yes, that’s the word. I expect this will have varying elements of IOT, Big Data, Machine Learning and Deep Learning. All areas I have been looking forward to take a deep dive into.&lt;/p&gt;
+
+&lt;p&gt;I intend to write a monthly blog reflecting on my journey in between more technical blogs highlighting what I have actually done. You are welcome to tag along.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 31 Mar 2016 21:38:30 -0400</pubDate>
+        <link>http://yourdomain.com/2016/03/31/my-2016-challenge-1-min-read.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/03/31/my-2016-challenge-1-min-read.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>2016 Reading List</title>
