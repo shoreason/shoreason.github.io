@@ -6,9 +6,42 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Mar 2016 23:08:25 -0400</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2016 23:08:25 -0400</lastBuildDate>
+    <pubDate>Fri, 01 Apr 2016 17:54:06 -0400</pubDate>
+    <lastBuildDate>Fri, 01 Apr 2016 17:54:06 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>My 2016 Challenge : The Foundation</title>
+        <description>&lt;p&gt;Technically I started work on my &lt;a href=&quot;http://shoreason.github.io/2016/03/31/my-2016-challenge-1-min-read.html&quot;&gt;2016 challenge&lt;/a&gt; late 2015. The goal remains to have something tangible done as the year progresses. This brings me to the foundation of all I intend to build: The Architecture.&lt;/p&gt;
+
+&lt;p&gt;As a Software Engineer, I deal with Architecture decisions daily. Making best guesses on future design and ruminating on past bad decisions. In the Agile landscape I have come to terms with that fact that &lt;a href=&quot;https://shoreason.wordpress.com/2014/02/16/did-someone-lose-architectures-invite-to-the-agile-party/?frame-nonce=2e4aab6523&amp;amp;preview=true&amp;amp;iframe=true&quot;&gt;Architecture&lt;/a&gt; is really where you land and the initial key decisions are around mitigating risks. How much time one puts in upfront architecture decision depends on what you are building: A shed or a skyscraper. In my case I choose to land somewhere in between.&lt;/p&gt;
+
+&lt;p&gt;I typically advocate for a factor of 3 to account for the smallest unit of complexity. In this first round I was focused more on simplicity which meant a single node and single broker where possible.&lt;/p&gt;
+
+&lt;p&gt;My current tech-stack includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MQTT&lt;/li&gt;
+  &lt;li&gt;Kafka&lt;/li&gt;
+  &lt;li&gt;ELK Stack&lt;/li&gt;
+  &lt;li&gt;Cassandra&lt;/li&gt;
+  &lt;li&gt;2 Linux boxes&lt;/li&gt;
+  &lt;li&gt;Programming language choice -  C, Python&lt;/li&gt;
+  &lt;li&gt;Sensor Peripherals (Efergy Electricity Monitor and R820 Tuner)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/EfergyDataPipeline.png&quot; alt=&quot;Data Pipeline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is my view from Kibana&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/kibanaEfergyScreenShot.png&quot; alt=&quot;Kibana Visualization&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Apr 2016 17:02:42 -0400</pubDate>
+        <link>http://yourdomain.com/2016/04/01/my-2016-challenge-the-foundation.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/04/01/my-2016-challenge-the-foundation.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>My 2016 Challenge (1 Min Read)</title>

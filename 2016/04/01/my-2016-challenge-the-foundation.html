@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ShoReason</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>My 2016 Challenge : The Foundation</title>
+  <meta name="description" content="Technically I started work on my 2016 challenge late 2015. The goal remains to have something tangible done as the year progresses. This brings me to the fou...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2016/04/01/my-2016-challenge-the-foundation.html">
   <link rel="alternate" type="application/rss+xml" title="ShoReason" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -55,41 +54,42 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">My 2016 Challenge : The Foundation</h1>
+    <p class="post-meta"><time datetime="2016-04-01T17:02:42-04:00" itemprop="datePublished">Apr 1, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 1, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Technically I started work on my <a href="http://shoreason.github.io/2016/03/31/my-2016-challenge-1-min-read.html">2016 challenge</a> late 2015. The goal remains to have something tangible done as the year progresses. This brings me to the foundation of all I intend to build: The Architecture.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/04/01/my-2016-challenge-the-foundation.html">My 2016 Challenge : The Foundation</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 31, 2016</span>
+<p>As a Software Engineer, I deal with Architecture decisions daily. Making best guesses on future design and ruminating on past bad decisions. In the Agile landscape I have come to terms with that fact that <a href="https://shoreason.wordpress.com/2014/02/16/did-someone-lose-architectures-invite-to-the-agile-party/?frame-nonce=2e4aab6523&amp;preview=true&amp;iframe=true">Architecture</a> is really where you land and the initial key decisions are around mitigating risks. How much time one puts in upfront architecture decision depends on what you are building: A shed or a skyscraper. In my case I choose to land somewhere in between.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/03/31/my-2016-challenge-1-min-read.html">My 2016 Challenge (1 Min Read)</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 25, 2016</span>
+<p>I typically advocate for a factor of 3 to account for the smallest unit of complexity. In this first round I was focused more on simplicity which meant a single node and single broker where possible.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/03/25/2016-reading-list.html">2016 Reading List</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>My current tech-stack includes:</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<ul>
+  <li>MQTT</li>
+  <li>Kafka</li>
+  <li>ELK Stack</li>
+  <li>Cassandra</li>
+  <li>2 Linux boxes</li>
+  <li>Programming language choice -  C, Python</li>
+  <li>Sensor Peripherals (Efergy Electricity Monitor and R820 Tuner)</li>
+</ul>
 
-</div>
+<p><img src="/images/EfergyDataPipeline.png" alt="Data Pipeline" /></p>
+
+<p>Here is my view from Kibana</p>
+
+<p><img src="/images/kibanaEfergyScreenShot.png" alt="Kibana Visualization" /></p>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://yourdomain.com/2016/04/01/my-2016-challenge-the-foundation.html" data-text="My 2016 Challenge : The Foundation by @shoreason -" data-dnt="true">Twitter</a>
+  </div>
+
+</article>
 
       </div>
     </div>
