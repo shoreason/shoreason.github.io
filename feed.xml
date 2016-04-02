@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ShoReason</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Welcome to the musings and ramblings of a life learner. My interest range from technology to business, design and data science. I hope you experience at least one &#39;Kairos&#39; moment while you are here.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Apr 2016 17:54:06 -0400</pubDate>
-    <lastBuildDate>Fri, 01 Apr 2016 17:54:06 -0400</lastBuildDate>
+    <pubDate>Sat, 02 Apr 2016 00:00:22 -0400</pubDate>
+    <lastBuildDate>Sat, 02 Apr 2016 00:00:22 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>My 2016 Challenge : The Foundation</title>
+        <title>My 2016 Challenge : The Foundation (1 Min Read)</title>
         <description>&lt;p&gt;Technically I started work on my &lt;a href=&quot;http://shoreason.github.io/2016/03/31/my-2016-challenge-1-min-read.html&quot;&gt;2016 challenge&lt;/a&gt; late 2015. The goal remains to have something tangible done as the year progresses. This brings me to the foundation of all I intend to build: The Architecture.&lt;/p&gt;
 
 &lt;p&gt;As a Software Engineer, I deal with Architecture decisions daily. Making best guesses on future design and ruminating on past bad decisions. In the Agile landscape I have come to terms with that fact that &lt;a href=&quot;https://shoreason.wordpress.com/2014/02/16/did-someone-lose-architectures-invite-to-the-agile-party/?frame-nonce=2e4aab6523&amp;amp;preview=true&amp;amp;iframe=true&quot;&gt;Architecture&lt;/a&gt; is really where you land and the initial key decisions are around mitigating risks. How much time one puts in upfront architecture decision depends on what you are building: A shed or a skyscraper. In my case I choose to land somewhere in between.&lt;/p&gt;
