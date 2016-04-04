@@ -6,9 +6,65 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Apr 2016 00:00:22 -0400</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 00:00:22 -0400</lastBuildDate>
+    <pubDate>Mon, 04 Apr 2016 14:23:59 -0400</pubDate>
+    <lastBuildDate>Mon, 04 Apr 2016 14:23:59 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>My 2016 Challenge : Kafka or MQTT for Messaging</title>
+        <description>&lt;p&gt;Messaging is a critical aspect to any distributed architecture. Even more vital in modern architecture is that you need a way to decouple actors or systems within your ecosystem. Pub/Sub is one model that allows you achieve this. In tthis model one component in your environment broadcasts/ publishes a message which can then be consumed/subscribed to by by 1 or more components or consumers. The compoment that acts as the middle man in this model is called a broker, which is what MQTT and Kafka do.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MQTT&lt;/strong&gt; is a protocol made for light weight messages. It is great for situations where low bandwidth is a constraint and with about 2 bytes header size it is well suited for small devices like an Arduino and Raspberry Pi.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-characteristics-of-mqtt&quot;&gt;Key Characteristics of MQTT&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lightweight (2byte overhead per message)&lt;/li&gt;
+  &lt;li&gt;Easy to parse for computers (length prefixed length)&lt;/li&gt;
+  &lt;li&gt;Broker keeps track of client state&lt;/li&gt;
+  &lt;li&gt;Guarantees message delivery through retries&lt;/li&gt;
+  &lt;li&gt;Security (usr/pwd over TLS)&lt;/li&gt;
+  &lt;li&gt;Dynamic topics&lt;/li&gt;
+  &lt;li&gt;Runs on TCP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Kafka&lt;/strong&gt; is essentially a distributed commit log. Kafka’s claim to fame is its support for high throuhput and message durability even at scale.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-characteristics-of-kafka&quot;&gt;Key Characteristics of Kafka&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Distributed Log aggregator&lt;/li&gt;
+  &lt;li&gt;Client keeps track of what messages it has processed&lt;/li&gt;
+  &lt;li&gt;Meant for server side environments (server to server)&lt;/li&gt;
+  &lt;li&gt;Static topics (topic - static, key - dynamic)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Common features across both solutions&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Both brokers for pub/sub&lt;/li&gt;
+  &lt;li&gt;Decouple consumers from producers&lt;/li&gt;
+  &lt;li&gt;Offer measure of reliability (QoS 1, 2 &amp;amp;3)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both solutions address the key needs I have for messaging so which did I choose. Well I chose both. The essential thing about these two solutions is that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MQTT is suited for dumb clients&lt;/li&gt;
+  &lt;li&gt;Kafka for smart clients&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In my ecosystem the sensors at the edge capturing electricty usage, temperature and humidity readings etc  are simply observing an event and transmitting light weight data. In this case I use MQTT to pipe in their data. Kafka comes into the picture as the main broker through which all collected data are streamed over to the ELK Stack. I forsee Kafka playing a much bigger role when I pull in data at rest or batch data for analysis.&lt;/p&gt;
+
+&lt;p&gt;I’m still working with these two to really grasp where they fit, but so far I feel comfortable about how they are used. I did come across some material on the web around problems with &lt;a href=&quot;https://www.youtube.com/watch?v=VoTclkxSago&quot;&gt;Scaling MQTT&lt;/a&gt;. Scale is not something I’m worried about around the edge, so MQTT does what I need. Kafka helps me manage the scale I have at the heart of the ecosystem.&lt;/p&gt;
+
+&lt;p&gt;The other choice I had to make recently was how to persist the data, which I’ll cover in a later post.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 04 Apr 2016 13:17:28 -0400</pubDate>
+        <link>http://yourdomain.com/2016/04/04/messaging-kafka-vs-mqtt.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/04/04/messaging-kafka-vs-mqtt.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>My 2016 Challenge : The Foundation (1 Min Read)</title>

@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ShoReason</title>
-  <meta name="description" content="Welcome to the musings and ramblings of a life learner. My interest range from technology to business, design and data science. I hope you experience at least one 'Kairos' moment while you are here.
-">
+  <title>My 2016 Challenge : Kafka or MQTT for Messaging</title>
+  <meta name="description" content="Messaging is a critical aspect to any distributed architecture. Even more vital in modern architecture is that you need a way to decouple actors or systems w...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2016/04/04/messaging-kafka-vs-mqtt.html">
   <link rel="alternate" type="application/rss+xml" title="ShoReason" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -55,49 +54,65 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">My 2016 Challenge : Kafka or MQTT for Messaging</h1>
+    <p class="post-meta"><time datetime="2016-04-04T13:17:28-04:00" itemprop="datePublished">Apr 4, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 4, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Messaging is a critical aspect to any distributed architecture. Even more vital in modern architecture is that you need a way to decouple actors or systems within your ecosystem. Pub/Sub is one model that allows you achieve this. In tthis model one component in your environment broadcasts/ publishes a message which can then be consumed/subscribed to by by 1 or more components or consumers. The compoment that acts as the middle man in this model is called a broker, which is what MQTT and Kafka do.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/04/04/messaging-kafka-vs-mqtt.html">My 2016 Challenge : Kafka or MQTT for Messaging</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 1, 2016</span>
+<p><strong>MQTT</strong> is a protocol made for light weight messages. It is great for situations where low bandwidth is a constraint and with about 2 bytes header size it is well suited for small devices like an Arduino and Raspberry Pi.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/04/01/my-2016-challenge-the-foundation.html">My 2016 Challenge : The Foundation (1 Min Read)</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 31, 2016</span>
+<h2 id="key-characteristics-of-mqtt">Key Characteristics of MQTT</h2>
+<ul>
+  <li>Lightweight (2byte overhead per message)</li>
+  <li>Easy to parse for computers (length prefixed length)</li>
+  <li>Broker keeps track of client state</li>
+  <li>Guarantees message delivery through retries</li>
+  <li>Security (usr/pwd over TLS)</li>
+  <li>Dynamic topics</li>
+  <li>Runs on TCP</li>
+</ul>
 
-        <h2>
-          <a class="post-link" href="/2016/03/31/my-2016-challenge-1-min-read.html">My 2016 Challenge (1 Min Read)</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 25, 2016</span>
+<p><strong>Kafka</strong> is essentially a distributed commit log. Kafka’s claim to fame is its support for high throuhput and message durability even at scale.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/03/25/2016-reading-list.html">2016 Reading List</a>
-        </h2>
-      </li>
-    
-  </ul>
+<h2 id="key-characteristics-of-kafka">Key Characteristics of Kafka</h2>
+<ul>
+  <li>Distributed Log aggregator</li>
+  <li>Client keeps track of what messages it has processed</li>
+  <li>Meant for server side environments (server to server)</li>
+  <li>Static topics (topic - static, key - dynamic)</li>
+</ul>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>Common features across both solutions</p>
 
-</div>
+<ul>
+  <li>Both brokers for pub/sub</li>
+  <li>Decouple consumers from producers</li>
+  <li>Offer measure of reliability (QoS 1, 2 &amp;3)</li>
+</ul>
+
+<p>Both solutions address the key needs I have for messaging so which did I choose. Well I chose both. The essential thing about these two solutions is that:</p>
+
+<ul>
+  <li>MQTT is suited for dumb clients</li>
+  <li>Kafka for smart clients</li>
+</ul>
+
+<p>In my ecosystem the sensors at the edge capturing electricty usage, temperature and humidity readings etc  are simply observing an event and transmitting light weight data. In this case I use MQTT to pipe in their data. Kafka comes into the picture as the main broker through which all collected data are streamed over to the ELK Stack. I forsee Kafka playing a much bigger role when I pull in data at rest or batch data for analysis.</p>
+
+<p>I’m still working with these two to really grasp where they fit, but so far I feel comfortable about how they are used. I did come across some material on the web around problems with <a href="https://www.youtube.com/watch?v=VoTclkxSago">Scaling MQTT</a>. Scale is not something I’m worried about around the edge, so MQTT does what I need. Kafka helps me manage the scale I have at the heart of the ecosystem.</p>
+
+<p>The other choice I had to make recently was how to persist the data, which I’ll cover in a later post.</p>
+
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://yourdomain.com/2016/04/04/messaging-kafka-vs-mqtt.html" data-text="My 2016 Challenge : Kafka or MQTT for Messaging by @shoreason -" data-dnt="true">Twitter</a>
+  </div>
+
+</article>
 
       </div>
     </div>
